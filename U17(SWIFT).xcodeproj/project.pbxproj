@@ -9,10 +9,18 @@
 /* Begin PBXBuildFile section */
 		083A963E96872216373E7FDD /* Pods_U17_SWIFT_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29C386CE27CD570E59F6FC2 /* Pods_U17_SWIFT_.framework */; };
 		180360BB2021780F00873F96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180360BA2021780F00873F96 /* Assets.xcassets */; };
+		180AD982202BEC1B0025B2B0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180AD981202BEC1B0025B2B0 /* BaseViewController.swift */; };
+		180AD9C2202C45710025B2B0 /* UPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180AD9C1202C45710025B2B0 /* UPageViewController.swift */; };
+		181B0B01202D43CC001FEAE9 /* RecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181B0B00202D43CC001FEAE9 /* RecommendController.swift */; };
+		181B0B03202D43E0001FEAE9 /* VIPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181B0B02202D43E0001FEAE9 /* VIPController.swift */; };
+		181B0B05202D4406001FEAE9 /* SubscribeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181B0B04202D4406001FEAE9 /* SubscribeController.swift */; };
+		181B0B07202D4424001FEAE9 /* RankListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181B0B06202D4424001FEAE9 /* RankListController.swift */; };
 		1822A401201B29E7002951AD /* U17_SWIFT_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1822A400201B29E7002951AD /* U17_SWIFT_Tests.swift */; };
 		1822A40C201B29E7002951AD /* U17_SWIFT_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1822A40B201B29E7002951AD /* U17_SWIFT_UITests.swift */; };
 		1822A42A201B308C002951AD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1822A427201B2DDB002951AD /* HomeViewController.swift */; };
 		1822A42C201B31EA002951AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1822A41A201B2C8B002951AD /* AppDelegate.swift */; };
+		189EF88E202AE1CB00E53E85 /* UNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EF88D202AE1CB00E53E85 /* UNavigationController.swift */; };
+		189EF891202AFADC00E53E85 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EF890202AFADC00E53E85 /* UIColorExtension.swift */; };
 		18F04DE3202153EE0049D0C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F04DE2202153EE0049D0C7 /* LaunchScreen.storyboard */; };
 		18F04DE82021581F0049D0C7 /* UTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F04DE72021581F0049D0C7 /* UTabbarController.swift */; };
 		18F04DFC202162F60049D0C7 /* BooksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F04DFB202162F60049D0C7 /* BooksController.swift */; };
@@ -57,6 +65,12 @@
 /* Begin PBXFileReference section */
 		1289198F8CC229A2C3E8812A /* Pods-U17(SWIFT).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U17(SWIFT).release.xcconfig"; path = "Pods/Target Support Files/Pods-U17(SWIFT)/Pods-U17(SWIFT).release.xcconfig"; sourceTree = "<group>"; };
 		180360BA2021780F00873F96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		180AD981202BEC1B0025B2B0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		180AD9C1202C45710025B2B0 /* UPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPageViewController.swift; sourceTree = "<group>"; };
+		181B0B00202D43CC001FEAE9 /* RecommendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendController.swift; sourceTree = "<group>"; };
+		181B0B02202D43E0001FEAE9 /* VIPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPController.swift; sourceTree = "<group>"; };
+		181B0B04202D4406001FEAE9 /* SubscribeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeController.swift; sourceTree = "<group>"; };
+		181B0B06202D4424001FEAE9 /* RankListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankListController.swift; sourceTree = "<group>"; };
 		1822A3E8201B29E7002951AD /* U17(SWIFT).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "U17(SWIFT).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1822A3FC201B29E7002951AD /* U17(SWIFT)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "U17(SWIFT)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1822A400201B29E7002951AD /* U17_SWIFT_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = U17_SWIFT_Tests.swift; sourceTree = "<group>"; };
@@ -67,6 +81,8 @@
 		1822A41A201B2C8B002951AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1822A420201B2C8B002951AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1822A427201B2DDB002951AD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		189EF88D202AE1CB00E53E85 /* UNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNavigationController.swift; sourceTree = "<group>"; };
+		189EF890202AFADC00E53E85 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		18F04DE2202153EE0049D0C7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18F04DE72021581F0049D0C7 /* UTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTabbarController.swift; sourceTree = "<group>"; };
 		18F04DFB202162F60049D0C7 /* BooksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksController.swift; sourceTree = "<group>"; };
@@ -144,6 +160,7 @@
 		1822A3EA201B29E7002951AD /* U17(SWIFT) */ = {
 			isa = PBXGroup;
 			children = (
+				189EF88F202AFA8F00E53E85 /* Extension */,
 				1822A42D201B3544002951AD /* other */,
 				1822A421201B2CFF002951AD /* Procedure */,
 				1822A419201B2C8B002951AD /* main */,
@@ -220,6 +237,10 @@
 			isa = PBXGroup;
 			children = (
 				1822A427201B2DDB002951AD /* HomeViewController.swift */,
+				181B0B00202D43CC001FEAE9 /* RecommendController.swift */,
+				181B0B02202D43E0001FEAE9 /* VIPController.swift */,
+				181B0B04202D4406001FEAE9 /* SubscribeController.swift */,
+				181B0B06202D4424001FEAE9 /* RankListController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -231,6 +252,14 @@
 				18F04E0A20216D9B0049D0C7 /* Tab */,
 			);
 			path = other;
+			sourceTree = "<group>";
+		};
+		189EF88F202AFA8F00E53E85 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				189EF890202AFADC00E53E85 /* UIColorExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		18F04DE4202157F10049D0C7 /* Base */ = {
@@ -245,7 +274,10 @@
 		18F04DE5202157F10049D0C7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				180AD9C1202C45710025B2B0 /* UPageViewController.swift */,
+				180AD981202BEC1B0025B2B0 /* BaseViewController.swift */,
 				18F04DE72021581F0049D0C7 /* UTabbarController.swift */,
+				189EF88D202AE1CB00E53E85 /* UNavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -534,11 +566,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-U17(SWIFT)/Pods-U17(SWIFT)-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HMSegmentedControl/HMSegmentedControl.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HMSegmentedControl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -586,11 +622,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F04E00202163190049D0C7 /* MineController.swift in Sources */,
+				181B0B03202D43E0001FEAE9 /* VIPController.swift in Sources */,
 				1822A42C201B31EA002951AD /* AppDelegate.swift in Sources */,
+				181B0B05202D4406001FEAE9 /* SubscribeController.swift in Sources */,
 				18F04DFE202163090049D0C7 /* CateListController.swift in Sources */,
+				189EF891202AFADC00E53E85 /* UIColorExtension.swift in Sources */,
 				1822A42A201B308C002951AD /* HomeViewController.swift in Sources */,
+				181B0B07202D4424001FEAE9 /* RankListController.swift in Sources */,
+				181B0B01202D43CC001FEAE9 /* RecommendController.swift in Sources */,
+				180AD9C2202C45710025B2B0 /* UPageViewController.swift in Sources */,
+				180AD982202BEC1B0025B2B0 /* BaseViewController.swift in Sources */,
 				18F04DFC202162F60049D0C7 /* BooksController.swift in Sources */,
 				18F04DE82021581F0049D0C7 /* UTabbarController.swift in Sources */,
+				189EF88E202AE1CB00E53E85 /* UNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

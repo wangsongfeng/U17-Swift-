@@ -13,7 +13,7 @@ class UTabbarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBar.isTranslucent = false
-        let HomeControl = HomeViewController()
+        let HomeControl = HomeViewController(titles:["推荐","VIP","订阅","排行"],vcs:[RecommendController(),VIPController(),SubscribeController(),RankListController()], pageStyle : .navigationBarSegment)
         
         addChildViewController(HomeControl, title: "首页", image: UIImage.init(named: "tab_home"), selecteImage: UIImage.init(named: "tab_home_S"))
         /// 分类
@@ -37,18 +37,18 @@ class UTabbarController: UITabBarController {
         if UIDevice.current.userInterfaceIdiom == .phone {
             childController.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
         }
-        addChildViewController(childController)
+        addChildViewController(UNavigationController(rootViewController:childController))
     }
     
     
    
 }
 
-//extension UTabbarController {
-//    override var preferredStatusBarStyle: UIStatusBarStyle {
-//        guard let select = selectedViewController else { return .lightContent }
-//        return select.preferredStatusBarStyle
-//    }
-//}
+extension UTabbarController {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        guard let select = selectedViewController else { return .lightContent }
+        return select.preferredStatusBarStyle
+    }
+}
 
 
