@@ -15,5 +15,15 @@ class HomeViewController: UPageViewController {
 
     }
 
+    override func configNavigationBar() {
+        super.configNavigationBar()
+        let image = UIImage.init(named: "nav_search")
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: image?.withRenderingMode(.alwaysOriginal), style: UIBarButtonItemStyle.done, target: self, action: #selector(selectAction))
+    }
+    
+    @objc private func selectAction() {
+        
+    }
 
 }

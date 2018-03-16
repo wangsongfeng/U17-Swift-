@@ -29,6 +29,8 @@ class UTabbarController: UITabBarController {
     
     
     func addChildViewController(_ childController: UIViewController, title:String?, image:UIImage?, selecteImage:UIImage?) -> Void {
+        
+        
         childController.title = title
         childController.tabBarItem = UITabBarItem.init(title: nil, image: image?.withRenderingMode(.alwaysOriginal), selectedImage: selecteImage?.withRenderingMode(.alwaysOriginal))
         
@@ -38,6 +40,7 @@ class UTabbarController: UITabBarController {
             childController.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
         }
         addChildViewController(UNavigationController(rootViewController:childController))
+        
     }
     
     

@@ -60,6 +60,7 @@ class UPageViewController: BaseViewController {
     }
     
     override func configUI() {
+        super.configUI()
         guard let _:[UIViewController] = vcs else {
             return
         }
@@ -128,7 +129,7 @@ extension UPageViewController:UIPageViewControllerDelegate,UIPageViewControllerD
             return nil
         }
         let beforeIndex = index - 1
-        guard beforeIndex>0  else {
+        guard beforeIndex>=0  else {
             return nil
         }
         return vcs[beforeIndex]
